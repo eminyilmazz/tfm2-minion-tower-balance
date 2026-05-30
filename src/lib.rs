@@ -578,15 +578,9 @@ fn mod_file_paths(file_name: &str) -> Vec<PathBuf> {
     let mut paths = Vec::new();
 
     if let Ok(current_dir) = std::env::current_dir() {
+        paths.push(current_dir.join(file_name));
         paths.push(current_dir.join("mods").join(MOD_ID).join(file_name));
     }
-
-    paths.push(
-        PathBuf::from(r"D:\SteamLibrary\steamapps\common\Teamfight Manager2")
-            .join("mods")
-            .join(MOD_ID)
-            .join(file_name),
-    );
 
     paths
 }

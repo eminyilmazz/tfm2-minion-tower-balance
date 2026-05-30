@@ -5,6 +5,8 @@ target/
 
 # Workshop/local runtime files
 *.log
+STEAM_WORKSHOP_DESCRIPTION.md
+/tfm2-minion-tower-balance.dll
 mod.workshop_id
 database_pack.workshop_id
 

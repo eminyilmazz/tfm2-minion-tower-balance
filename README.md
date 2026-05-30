@@ -22,7 +22,7 @@ These values are the defaults written to `balance_config.txt`.
 Edit this file in the installed mod folder:
 
 ```text
-D:\SteamLibrary\steamapps\common\Teamfight Manager2\mods\tfm2-minion-tower-balance\balance_config.txt
+your/steam/directory/steamapps/common/Teamfight Manager2/mods/tfm2-minion-tower-balance/balance_config.txt
 ```
 
 The file uses one `key=value` percentage per line. `100` means vanilla, and values are clamped to `1..=500`.
@@ -61,8 +61,8 @@ Build through the matching SDK. The SDK's batch file can stumble on paths with s
 
 ```powershell
 $env:RUSTUP_TOOLCHAIN = 'nightly-2026-05-29-x86_64-pc-windows-msvc'
-cd 'D:\SteamLibrary\steamapps\common\Teamfight Manager2\mod-sdk'
-.\build_mod_cargo.ps1 -Project '..\mods\tfm2-minion-tower-balance' -SdkDir 'D:\SteamLibrary\steamapps\common\Teamfight Manager2\mod-sdk'
+cd 'your/steam/directory/steamapps/common/Teamfight Manager2/mod-sdk'
+.\build_mod_cargo.ps1 -Project '../mods/tfm2-minion-tower-balance' -SdkDir 'your/steam/directory/steamapps/common/Teamfight Manager2/mod-sdk'
 ```
 
 The DLL mod id must stay equal to the folder name: `tfm2-minion-tower-balance`.
@@ -72,9 +72,9 @@ The DLL mod id must stay equal to the folder name: `tfm2-minion-tower-balance`.
 The publish-ready game folder is:
 
 ```text
-D:\SteamLibrary\steamapps\common\Teamfight Manager2\mods\tfm2-minion-tower-balance
+your/steam/directory/steamapps/common/Teamfight Manager2/mods/tfm2-minion-tower-balance
 ```
 
-It contains `mod.mod_info`, `balance_config.txt`, `thumbnail.png`, `preview.png`, and the compiled `tfm2-minion-tower-balance.dll`. Open `D:\SteamLibrary\steamapps\common\Teamfight Manager2\TFM2ModUploader.exe`, browse to that folder, keep Steam running, choose visibility, enter a change note such as `Initial upload`, and publish.
+It contains `mod.mod_info`, `balance_config.txt`, `thumbnail.png`, `preview.png`, and the compiled `tfm2-minion-tower-balance.dll`. Open `your/steam/directory/steamapps/common/Teamfight Manager2/TFM2ModUploader.exe`, browse to that folder, keep Steam running, choose visibility, enter a change note such as `Initial upload`, and publish.
 
 The uploader can rebuild native Rust code because `mod-sdk` is installed next to the uploader. It skips `src/`, `target/`, `Cargo.toml`, and `Cargo.lock` during upload, so only the runtime DLL and package assets are sent to Workshop.
