@@ -2,7 +2,7 @@
   "name": "Minion and Tower Balance",
   "author": "eminyilmazz",
   "version": "0.1.0",
-  "description": "[h1]Minion and Tower Balance[/h1]\n\nLess snowbally lanes: minions -10% HP/-20% damage, towers +20% HP/+10% damage/+10% projectile speed, nexus +25% HP, and Morgard minion buff -25%.\n\n[h2]Config[/h2]\nEdit [b]balance_config.txt[/b] in the mod folder. [b]100[/b] = vanilla; values clamp to [b]1-500[/b]. Reloads next management tick.\n\n[code]your/steam/directory/steamapps/common/Teamfight Manager2/mods/tfm2-minion-tower-balance/balance_config.txt[/code]\n\n[code]minion_hp=90\nminion_damage=80\nminion_growth_hp=100\nminion_growth_damage=100\ntower_hp=120\ntower_damage=110\ntower_projectile_speed=110\nnexus_hp=125\nmorgard_minion_buff=75[/code]\n\n[url=https://github.com/eminyilmazz/tfm2-minion-tower-balance]Source code[/url]",
+  "description": "[h1]Minion and Tower Balance[/h1]\nLess snowbally lanes: minions HP -10%, damage -20%, growth unchanged; towers HP +20%, damage +10%, projectile speed +10%; nexus HP +25%; Morgard buff -25%.\n[h2]Config[/h2]\nEdit [b]balance_config.txt[/b] in the mod folder. Path: your/steam/directory/steamapps/common/Teamfight Manager2/mods/tfm2-minion-tower-balance/balance_config.txt. Keys: minion_hp=90; minion_damage=80; minion_growth_hp=100; minion_growth_damage=100; tower_hp=120; tower_damage=110; tower_projectile_speed=110; nexus_hp=125; morgard_minion_buff=75. [b]100[/b] = vanilla; values clamp to [b]1-500[/b]. Reloads next management tick. [url=https://github.com/eminyilmazz/tfm2-minion-tower-balance]Source[/url]",
   "last_updated": "2026-05-30",
   "dependencies": [
     {
