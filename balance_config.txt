@@ -1,0 +1,14 @@
+# Minion and Tower Balance
+# Edit these values as percentages. 100 means vanilla. Values are clamped to 1..=500.
+# morgard_minion_buff scales the temporary Morgard minion empowerment strength.
+# Save the file while a save is loaded to reload it on the next management tick, or restart/reload the save.
+
+minion_hp=90
+minion_damage=80
+minion_growth_hp=100
+minion_growth_damage=100
+tower_hp=120
+tower_damage=110
+tower_projectile_speed=110
+nexus_hp=125
+morgard_minion_buff=75

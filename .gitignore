@@ -1,0 +1,10 @@
+/target/
+*.pdb
+*.lib
+*.exp
+*.ilk
+*.log
+mod.workshop_id
+database_pack.workshop_id
+.vs/
+.vscode/
