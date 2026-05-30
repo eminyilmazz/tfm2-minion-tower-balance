@@ -2,7 +2,7 @@
   "name": "Minion and Tower Balance",
   "author": "eminyilmazz",
   "version": "0.1.0",
-  "description": "Minion and Tower Balance makes Teamfight Manager 2 lanes less snowbally by weakening minions, strengthening towers and the nexus, and reducing Morgard's temporary minion empowerment buff.",
+  "description": "Minion and Tower Balance makes Teamfight Manager 2 lanes less snowbally by weakening minions, strengthening towers and the nexus, and reducing Morgard's temporary minion empowerment buff. Configure by editing balance_config.txt in the mod folder; 100 means vanilla.",
   "last_updated": "2026-05-30",
   "dependencies": [
     {
