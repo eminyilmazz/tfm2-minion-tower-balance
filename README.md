@@ -60,12 +60,12 @@ Saved string keys:
 Build through the matching SDK. The SDK's batch file can stumble on paths with spaces/trailing slashes, so the PowerShell script is the reliable path:
 
 ```powershell
-$env:RUSTUP_TOOLCHAIN = 'nightly-2026-06-02-x86_64-pc-windows-msvc'
+$env:RUSTUP_TOOLCHAIN = 'nightly-2026-06-04-x86_64-pc-windows-msvc'
 cd 'your/steam/directory/steamapps/common/Teamfight Manager2/mod-sdk'
 .\build_mod_cargo.ps1 -Project '../mods/tfm2-minion-tower-balance' -SdkDir 'your/steam/directory/steamapps/common/Teamfight Manager2/mod-sdk'
 ```
 
-For Teamfight Manager 2 `0.4.7`, use the `0.4.7` Mod SDK. The SDK should report `base_version.txt` as `0.4.7` and `toolchain_version.txt` as `rustc 1.98.0-nightly (6bdf43094 2026-06-01)`.
+For Teamfight Manager 2 `0.4.9`, use the `0.4.9` Mod SDK. The SDK should report `base_version.txt` as `0.4.9` and `toolchain_version.txt` as `rustc 1.98.0-nightly (b354133fb 2026-06-03)`.
 
 The DLL mod id must stay equal to the folder name: `tfm2-minion-tower-balance`.
 
